@@ -1,0 +1,36 @@
+# Godot 4 editor cache: imported assets, script class cache, shader cache.
+# Regenerated automatically when the project is opened.
+.godot/
+
+# Godot 3 leftovers (harmless to keep)
+.import/
+.mono/
+data_*/
+mono_crash.*.json
+
+# Export output (built binaries / packs for Linux, Steam Deck, etc.)
+export/
+build/
+*.x86_64
+*.pck
+*.zip
+
+# Optional: keep export presets out if they ever hold passwords/keystore paths
+# export_presets.cfg
+
+# Editor / OS clutter
+*.tmp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# NOTE - do NOT ignore these, they belong in git:
+#   *.uid       stable IDs Godot uses to find scripts/resources (Godot 4.4+)
+#   *.import    per-asset import settings (e.g. icon.svg.import)
+#   project.godot, scenes (*.tscn), scripts (*.gd)
+
+# Personal design notes (kept local)
+claude-requirements.md

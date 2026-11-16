@@ -1,0 +1,40 @@
+; Engine configuration file.
+; Toby Golf - Godot 4 project
+
+config_version=5
+
+[application]
+
+config/name="Toby Golf"
+config/description="A light-hearted, chunky retro 3D golf game starring Toby the coonhound."
+config/version="0.1.0"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.5", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[autoload]
+
+Game="*res://scripts/game.gd"
+
+[display]
+
+; Use X11/XWayland on Linux: native Wayland + GNOME fractional scaling (e.g. 125%)
+; renders the game into the top-left of the window. Steam Deck (gamescope) is X11 anyway.
+display_server/driver.linuxbsd="x11"
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/vsync/vsync_mode=1
+
+[physics]
+
+common/physics_ticks_per_second=60
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/canvas_textures/default_texture_filter=0
+anti_aliasing/quality/msaa_3d=1
+lights_and_shadows/directional_shadow/size=2048
